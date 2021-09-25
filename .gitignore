@@ -1,0 +1,50 @@
+node_modules/
+web_gui/node_modules/
+web_gui/dist/
+
+# Miscellaneous
+flutter_gui/*.class
+flutter_gui/*.log
+flutter_gui/*.pyc
+flutter_gui/*.swp
+flutter_gui/.DS_Store
+flutter_gui/.atom/
+flutter_gui/.buildlog/
+flutter_gui/.history
+flutter_gui/.svn/
+
+# IntelliJ related
+flutter_gui/*.iml
+flutter_gui/*.ipr
+flutter_gui/*.iws
+flutter_gui/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+flutter_gui/**/doc/api/
+flutter_gui/**/ios/Flutter/.last_build_id
+flutter_gui/.dart_tool/
+flutter_gui/.flutter-plugins
+flutter_gui/.flutter-plugins-dependencies
+flutter_gui/.packages
+flutter_gui/.pub-cache/
+flutter_gui/.pub/
+flutter_gui/build/
+
+# Web related
+flutter_gui/lib/generated_plugin_registrant.dart
+
+# Symbolication related
+flutter_gui/app.*.symbols
+
+# Obfuscation related
+flutter_gui/app.*.map.json
+
+# Android Studio will place build artifacts here
+flutter_gui/android/app/debug
+flutter_gui/android/app/profile
+flutter_gui/android/app/release
