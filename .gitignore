@@ -35,6 +35,11 @@ flutter_gui/.pub-cache/
 flutter_gui/.pub/
 flutter_gui/build/
 
+# Web Gui related
+web_gui/**/doc/api/
+web_gui/dist
+# TODO see if any other equiv 'Flutter/Dart/Pub related'
+
 # Web related
 flutter_gui/lib/generated_plugin_registrant.dart
 
@@ -45,6 +50,9 @@ flutter_gui/app.*.symbols
 flutter_gui/app.*.map.json
 
 # Android Studio will place build artifacts here
+web_gui/android/app/debug
+web_gui/android/app/profile
+web_gui/android/app/release
 flutter_gui/android/app/debug
 flutter_gui/android/app/profile
 flutter_gui/android/app/release
