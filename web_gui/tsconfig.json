@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "noImplicitAny": true,
+    "sourceMap": true,
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
@@ -24,6 +26,6 @@
     "baseUrl": "./",
     "paths": { "*": ["web_modules/.types/*"] }
   },
-  "include": ["src", "types"],
+  "include": ["src/**/*", "main/**/*", "types/**/*"],
   "exclude": ["node_modules"]
 }

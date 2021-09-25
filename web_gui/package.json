@@ -1,11 +1,16 @@
 {
   "name": "web_gui",
   "version": "1.0.0",
+  "author": "electron_author",
+  "description": "electron_description",
+  "main": "build/electron/main.js",
   "scripts": {
-    "dev": "snowpack dev",
-    "build": "snowpack build",
+    "dev-web": "snowpack dev",
+    "build-web": "snowpack build",
     "format": "prettier --write \"src/**/*.{ts,js}\"",
-    "lint": "prettier --check \"src/**/*.{ts,js}\""
+    "lint": "eslint -c .eslintrc --ext .ts ./src && prettier --check \"src/**/*.{ts,js}\"",
+    "dev-electron": "tsc ./main/main.ts ./main/preload.ts ./main/renderer.ts --outDir ./build/electron && concurrently \"snowpack dev --open none\" \"electron ./build/electron/main.js\"",
+    "electron-prod": "cross-env NODE_ENV=production electron ./build/electron/main.js"
   },
   "dependencies": {
     "@capacitor/android": "^3.2.3",
@@ -13,6 +18,8 @@
     "solid-js": "^1.0.0"
   },
   "devDependencies": {
+    "concurrently": "^6.2.1",
+    "cross-env": "^7.0.3",
     "@babel/core": "^7.14.6",
     "@babel/preset-typescript": "^7.14.5",
     "@capacitor/cli": "^3.2.3",
@@ -27,6 +34,10 @@
     "prettier": "^2.3.2",
     "snowpack": "^3.7.1",
     "tailwindcss": "^2.2.15",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "electron": "^15.0.0",
+    "eslint": "^7.32.0"
   }
 }

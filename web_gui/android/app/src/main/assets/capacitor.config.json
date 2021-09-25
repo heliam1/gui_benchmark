@@ -1,6 +1,6 @@
 {
 	"appId": "com.heliam1.gui_benchmark",
 	"appName": "web_gui",
-	"webDir": "dist",
+	"webDir": "build/web",
 	"bundledWebRuntime": false
 }

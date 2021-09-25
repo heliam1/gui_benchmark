@@ -12,6 +12,7 @@ const dispose = render(() => <App />, document.getElementById('app'));
  * Note: Solid doesn't support state preservation on hot reload as of yet
  */
 if (import.meta.env.MODE === 'development') {
+  let i;
   import.meta.hot.accept();
   import.meta.hot.dispose(dispose);
 }

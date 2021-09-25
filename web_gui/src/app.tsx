@@ -9,7 +9,7 @@ export const App: Component = () => {
     <>
       <button
         type="button"
-        onClick={() => decrement(2)}
+        onClick={() => decrement(1)}
         class="bg-gray-900 text-gray-100 p-4 text-3xl"
       >
         -

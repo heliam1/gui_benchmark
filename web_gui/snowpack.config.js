@@ -11,13 +11,14 @@ const config = {
     NODE_ENV: true,
   },
   devOptions: {
-    out: 'dist',
+    out: 'build/web',
     open: 'none',
     bundle: true,
   },
   buildOptions: {
     clean: true,
-    out: 'dist',
+    out: 'build/web',
+    baseUrl: "./",
   },
   plugins: [
     '@snowpack/plugin-typescript',
